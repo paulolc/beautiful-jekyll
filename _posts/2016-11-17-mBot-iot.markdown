@@ -1,0 +1,121 @@
+---
+
+layout: post
+
+title:  "IoT(wifi) module for MakeBlock's mBot"
+
+date:   2016-11-17 23:39:01 +0100
+
+categories: robots electronics documentation
+
+---
+
+
+
+# mBot IoT Communicator for $3!
+
+## The mBot
+
+MakeBlock's mBot is a very interesting and relatively cheap educational hackable robot. It comes with a caster plus two wheels
+powered by two regular small dc motors. The chassis is metal based and quite sturdy and the controller board is the MakeBlock's 
+mCore, an Arduino compatible board with a good set of sensors and actuators onboard such as, a luminosity sensor, an IR emitter, 
+an IR receiver, a button, and a buzzer. The mCore is also easily expandable using a unique and interesting RJ25 based 
+pluggable system with four of these connectors available for expansion with the MakeBlock's "Me" electronic modules.
+
+## "Firmata"?
+
+## Look ma, no wires! It's the Communicators!
+
+The mCore board 
+
+It can be controlled wirelessly via either its Bluetooth or 2.4Ghz RF based communication modules. 
+
+
+
+Unless you are interested in I bought the mBot variant with the Bluetooth one.
+
+
+
+
+## How about WiFi?
+
+Yes, how about wifi? Everything nowadays needs to be connected to the Internets, "IoT compatible" as they say. Well, in fact, MakeBlock 
+already has a WiFi Communicator module, the [Me WiFi](http://learn.makeblock.com/en/me-wifi/). 
+
+![Makeblock's Me Wifi Module](imgs/me-wifi.png)
+
+
+### Me Wifi? Well, it's complicated...  :(
+This module has several disadvantages:
+
+|         |           |   |
+| ------------- |:-------------:| -----:|
+| It needs to be plugged into one of the mCore RJ25 ports so, you end up with one less port to expand mBot with.      | ![alt text](imgs/me-wifi-rj25.png) | |
+| You need to explicitely write code and implement somekind of serial based communications protocol using the MakeBlock's provided MeWifi library to take advantage of the wireless capabilities of this module.  | ![alt text](imgs/me-wifi-code.png)      ||
+| You cannot use the mBot's default firmware that allows it to be programmed "online" using mBlock... |  [TODO: mBlock pic with prohibition sign over it ]   ||
+| ...Which also means that it's not possible to control it out of the box. That is, without any additional programming. | [TODO: mBot remote control with a prohibition sign over it ]  ||
+| No obvious place to mount it on mBot's chassis | [TODO: mbot exploded pic with Me Wifi module and a question mark]      ||
+| It's a bit expensive for me. (~$35 after shipping and tax) | [TODO: Me Wifi with some expensive symbology over]      ||
+
+
+
+As you can see, even if you fully reprogram the mBot's firmware you'll loose some of the characteristics that make mBot a pretty good educational robot, its ability to be ready to play out-of-the-box. 
+
+
+# Easy&Cheap DIY IoT Communicator
+
+Another great characteristic of mBot is that it's easily hackable. The socket where you plug the bluetooth or the 2.4Ghz wireless communicator modules is a very simple and straightforward one. Having nothing more than the pins you would normally expect on a serial interface: power, rx/tx, reset and "data ready". 
+
+Now, if only I had an easy way to connect a circuit to the network via WiFi... Wait! Of course, there's the ESP8266! What else? :)
+
+I've been playing a lot lately with the ESP8266, sharing and experiencing myself the excitment around these little buggers that has been spread all across the internet. They are very, very cheap, easy to setup with pretty impressive specs for the price. There is now a huge community, documentation and material for it. What started by being a 
+
+
+[TODO: Present the ESP8266]
+
+The cheapest, more arduino friendly esp8266 breakout board I could find was the WeMos D1 mini. 
+
+[TODO: Present the Wemos D1 mini]
+
+
+
+[TODO: Present esp-link as IoT firmware]
+
+
+
+So, the idea was set. 
+
+serial interface circuit + wemos d1 mini + esp-link firmware + network to serial port redirector (optional)
+
+
+
+## The "Let's see if it will work" test
+
+
+<img src="imgs/mbot_iot-breadboard.jpg" alt="The breadboard test" height="200" >
+
+## The stripboard circuit build
+
+[TODO: the schematics pic ]
+
+<img src="imgs/mbot-iot-fritzing.png" alt="The breadboard test" height="200" >
+
+
+[TODO: the fritzing diagram ]
+[TODO: the circuit being built pics ]
+[TODO: the final version and mounted pics ]
+
+
+## Upload the esp-link firmware
+
+[TODO: instructions on how to upload the firmware ]
+
+
+## Configure the serial, reset and led pins on esp-link
+
+[TODO: instructions on how to configure the serial, reset and led pins on esp-link ]
+
+
+## Play!!!
+
+[TODO: mBlock + node.js + bash(!) + browser?   test programs]
