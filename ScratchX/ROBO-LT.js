@@ -159,25 +159,25 @@ var Lang = {
 		
 		// portuguese translation
 		pt: {
-			evtButton:				'botÃ£o %m.inputs %m.buttonStates',
-			evtLightBarrier:		'cÃ©lula fotoelÃ©trica %m.inputs %m.lightBarrierStates',
+			evtButton:				'botão %m.inputs %m.buttonStates',
+			evtLightBarrier:		'célula fotoelétrica %m.inputs %m.lightBarrierStates',
  
-			setLampVal:				'definir lÃ¢mpada %m.outputs para %m.outputValues',
+			setLampVal:				'definir lâmpada %m.outputs para %m.outputValues',
 			setMotorValDir:			'definir motor %m.outputs para %m.outputValues %m.outputDirections',
 			setMotorDir:			'definir motor %m.outputs para %m.outputDirections',
-			setOutputVal:			'definir saÃ­da %m.outputs para %n',
+			setOutputVal:			'definir saída %m.outputs para %n',
 			reset:					'reiniciar',
         
-			getButton:				'botÃ£o %m.inputs pressionado?',
-			getLightBarrier:		'cÃ©lula fotoelÃ©trica %m.inputs fechada?',
-			getOutputValue:			'obter valor da saÃ­da %m.outputs',
+			getButton:				'botão %m.inputs pressionado?',
+			getLightBarrier:		'célula fotoelétrica %m.inputs fechada?',
+			getOutputValue:			'obter valor da saída %m.outputs',
         
 			pressed:				'pressionado',
-			released:				'liberado',
+			released:				'largado',
 			opens:					'abre',
 			closes:					'fecha',
-			forward:				'para frente',
-			backwards:				'para trÃ¡s',
+			forward:				'para a frente',
+			backwards:				'para trás',
 		},
 		
 	},	
