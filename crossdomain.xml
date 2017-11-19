@@ -2,6 +2,6 @@
 <site-control permitted-cross-domain-policies="master-only"/>
 <allow-access-from domain="scratchx.org" secure="false"/>
 <allow-access-from domain="scratch.mit.edu"/>
-<allow-access-from domain="paulolc.github.io" secure="false"/>
+<allow-access-from domain="paulolc.github.io"/>
 <allow-access-from domain="localhost"/>
 </cross-domain-policy>
