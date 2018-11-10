@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
+    <link href="https://zen.coderdojo.com/dist/css/app.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+</head>
+
+
+
+<body>
+
+    <style text="txt/css">
+        .badge-container {
+            z-index: 1000
+        }
+
+
+        body {
+            font-family: 'Lato';
+        }
+
+        td:nth-child(1) {
+            vertical-align: top;
+            padding: 20px;
+            padding-top: 20px
+        }
+
+        td:nth-child(2) {
+            padding: 20px;
+            padding-top: 0px
+        }
+
+        table {
+            width: 800px;
+            margin: auto;
+        }
+        
+        #badges-criteriatable {
+            padding-top: 60px;
+        }
+        
+
+        .criteria-section-title {
+            column-span: all
+        }
+        
+    </style>
+<a id="top"></a>
+
+    <div class="cd-menu__content-container">
+        <div class="cd-dashboard cd-badges-dashboard">
+            <div class="row badge-list">
+
+                <div class="badge-category-heading">
+                    <h2>Programação</h2>
+                    <div class="badge-category-container">
+
+
+
+                        <div class="badge-tag-container">
+                            <h3>Scratch</h3>
+                            <div class="badge-tag-block">
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/81">
+                                    <p class="badge-name"><b><a href="#scratch-beginner">Scratch [Iniciado]</a></b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/83">
+                                    <p class="badge-name"><b><a href="#scratch-intermediate">Scratch [Intermédio]</a></b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/86">
+                                    <p class="badge-name"><b><a href="#scratch-advanced">Scratch [Avançado]</a></b></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="badge-tag-container">
+                            <h3>Html e CSS</h3>
+                            <div class="badge-tag-block">
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/69">
+                                    <p class="badge-name"><b><a href="#htmlandcss-beginner">HTML &amp; CSS [Iniciado]</a></b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/74">
+                                    <p class="badge-name"><b><a href="#htmlandcss">HTML &amp; CSS [ Intermédio ]</a></b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/75">
+                                    <p class="badge-name"><b><a href="#htmlandcss">HTML &amp; CSS [ Avançado ]</a></b></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="badge-tag-container">
+                            <h3>Python</h3>
+                            <div class="badge-tag-block">
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/78">
+                                    <p class="badge-name"><b><a href="#python-beginner">Python [Iniciado]</a></b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/79">
+                                    <p class="badge-name"><b><a href="#python">Python [Intermédio]</a></b></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="badge-tag-container">
+                            <h3>App Inventor</h3>
+                            <div class="badge-tag-block">
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/84">
+                                    <p class="badge-name"><b><a href="#appinventor-beginner">App Inventor [Iniciado]</a></b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/85">
+                                    <p class="badge-name"><b><a href="#appinventor">App Inventor [Intermédio]</a></b></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="badge-tag-container">
+                            <h3>Javascript</h3>
+                            <div class="badge-tag-block">
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/76">
+                                    <p class="badge-name"><b><a href="#javascript-beginner">Javascript [ Iniciado ]</a></b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/72">
+                                    <p class="badge-name"><b><a href="#javascript">Javascript [ Intermédio ]</a></b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/77">
+                                    <p class="badge-name"><b><a href="#javascript">Javascript [Avançado]</a></b></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="badge-category-heading" heading="Soft Skills" ng-click="categorySelected()" role="button" tabindex="0">
+                    <h2>Competências Interpessoais</h2>
+                    <div class="badge-category-container">
+
+                        <div class="badge-tag-container">
+                            <h3>Mentor</h3>
+                            <div class="badge-tag-block">
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/50">
+                                    <p class="badge-name"><b>Mentor</b></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="badge-tag-container">
+                            <h3>Campeão</h3>
+                            <div class="badge-tag-block">
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/6">
+                                    <p class="badge-name"><b>Campeão</b></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="badge-tag-container">
+                            <h3>Voluntariado</h3>
+                            <div class="badge-tag-block">
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/60">
+                                    <p class="badge-name"><b>Inspiring Ninjas: How to be a CoderDojo Mentor</b></p>
+                                </div>
+
+                                <div class="badge-container"><img class="badge-thumbnail pointer" src="http://badgekit.coderdojo.com:80/images/badge/62">
+                                    <p class="badge-name"><b>CoderDojo Ethos: Implementation and Practice</b></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="badges-criteriatable">
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <a id="scratch-beginner"></a>
+                            <td>
+
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/81" width="142">
+
+                            </td>
+
+                            <td>
+                                <h3>Scratch [Iniciado]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de Scratch aprendendo os seguintes princípios fundamentais:</p>
+                                <li>Utilização dos comandos para andar e girar</li>
+                                <li>Utilização dos controlos do teclado</li>
+                                <li>Utilização das coordenadas x/y para posicionar os actores</li>
+                                <li>Alteração do cenário do palco e do traje de um actor, e utilização de mostrar/esconder</li>
+                                <li>Utilização de ciclos repete para sempre</li>
+                                <li>Detecção do toque entre actores</li>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de Scratch de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «Scratch (Iniciado)» do CoderDojo. [http://kata.coderdojo.com/wiki/Beginner_Scratch]</li>
+                                <li>Desenvolvendo um programa que demonstre o seu conhecimento dos princípios acima.</li>
+                                <a class="return-to-top" href="#top">(Voltar ao topo)</a>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/83" width="142">
+                            </td>
+
+                            <td>
+                                <a id="scratch-intermediate"></a><h3>Scratch [Intermédio]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de Scratch exemplificando princípios da linguagem incluindo:</p>
+                                <li>Utilização da ferramenta Caneta</li>
+                                <li>Utilização e actualização de variáveis em ciclos</li>
+                                <li>Utilização de ciclos «até que repete»</li>
+                                <li>Obtenção de valores de entrada com comando «pergunta»</li>
+                                <li>Utilização de várias listas com propriedades relacionadas pelo índice</li>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de Scratch de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «Scratch (Intermédio)» do CoderDojo. [http://kata.coderdojo.com/wiki/Intermediate_Scratch]</li>
+                                <li>Desenvolvendo um programa que demonstre o seu conhecimento dos princípios acima.</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <a id="scratch-advanced"></a>
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/86" width="142">
+
+                            </td>
+
+                            <td>
+                                <h3>Scratch [Avançado]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de Scratch exemplificando princípios da linguagem incluindo:</p>
+                                <li>Clonagem de atores</li>
+                                <li>Utilização de variáveis dentro de actores clonados</li>
+                                <li>Criação e utilização de blocos personalizados («Mais Blocos»)</li>
+                                <li>Reutilização do código em vários locais com blocos personalizados («Mais Blocos»)</li>
+                                <li>Difusão de mensagens para desencadear comportamentos em outros actores</li>
+                                <li>Utilização de variáveis para configurar o programa</li>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de Scratch de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «Scratch (Avançado)» do CoderDojo. [http://kata.coderdojo.com/wiki/Advanced_Scratch]</li>
+                                <li>Desenvolvendo um programa que demonstre o seu conhecimento dos princípios acima.</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h1>Python</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/78" width="142">
+                            </td>
+
+                            <td>
+
+                                <a id="python-beginner"></a><h3>Python [Iniciado]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de Python aprendendo princípios fundamentais tais como: </p>
+                                <li>Armazenamento e execução de programas em Python usando um editor de texto e a linha de comandos</li>
+                                <li>Escrita de texto no ecrã</li>
+                                <li>Concatenação básica de cadeias de caracteres (incluindo str() para converter números)</li>
+                                <li>Utilização de variáveis para guardar texto e números</li>
+                                <li>Obtenção de entradas do utilizador (incluindo int() para converter números)</li>
+                                <li>Utilização de operações matemáticas simples</li>
+                                <li>Utilização de instruções if/elif/else e de operadores de comparação</li>
+                                <li>Utilização de ciclos while</li>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de Python de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «Python (Iniciado)» do CoderDojo. [http://kata.coderdojo.com/wiki/Beginner_Python]</li>
+                                <li>Criando um projecto, possivelmente um jogo simples para adivinhar um número, que demonstre os princípios acima</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/79" width="142">
+                            </td>
+
+                            <td>
+                                <a id="python-intermediate"></a><h3>Python [intermédio]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de Python exemplificando princípios da linguagem incluindo:</p>
+                                <li>Utilização de listas para guardar valores, bem com utilização de operações comuns sobre listas: acrescentar, remover, inverter e saber o comprimento</li>
+                                <li>Utilização de dicionários para guardar pares chave/valor</li>
+                                <li>Utilização de ciclos for para repetir o mesmo código um certo número de vezes ou para percorrer uma lista</li>
+                                <li>Utilização de funções para reutilização do próprio código ou do código de outrém</li>
+                                <li>Utilização de arquivos de texto, lendo, escrevendo ou acrescentando</li>
+
+
+                                <p>Este emblema só pode ser atribuído se o candidato já tiver recebido o Emblema de Python Iniciado.</p>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de Python de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «Python (Intermédio)» do CoderDojo. [http://kata.coderdojo.com/wiki/Intermediate_Python ] </li>
+                                <li>Desenvolvendo um programa demonstrativo do conhecimento dos princípios acima</li>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h1>Javascript</h1>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/67" width="142">
+                            </td>
+
+                            <td>
+                                <a id="javascript-beginner"></a><h3>JavaScript [Iniciado]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de JavaScript aprendendo estes princípios fundamentais: </p>
+                                <li>Inclusão de JavaScript num arquivo HTML</li>
+                                <li>Utilização de um «linter» para depurar e procurar erros</li>
+                                <li>Utilização do atributo onClick de etiquetas HTML para accionar o JavaScript</li>
+                                <li>Utilização das funções alert() &amp; document.write()</li>
+                                <li>Inclusão da biblioteca jQuery numa página web</li>
+                                <li>Accionamento de acções na sequência de cliques, modificando propriedades CSS e obtendo valores de elementos com o jQuery.</li>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de JavaScript de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «JavaScript (Iniciado)» do CoderDojo. [http://kata.coderdojo.com/wiki/Beginner_JavaScript_Sushi]</li>
+                                <li>Demonstrando de qualquer outra forma ter aprendido os fundamentos da modificação de documentos HTML usando JavaScript, conforme descrito acima.</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/68" width="142">
+                            </td>
+
+                            <td>
+                                <a id="javascript-intermediate"></a><h3>JavaScript [intermédio]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de JavaScript exemplificando princípios da linguagem incluindo:</p>
+                                <li>Registo de mensagens na consola do navegador e sua leitura</li>
+                                <li>Utilização das ferramentas do programador do seu navegador para investigar e depurar o código</li>
+                                <li>Armazenamento em variáveis ​​(var) de valores de tipos de dados simples e de resultados de funções, obtendo e modificando os seus valores</li>
+                                <li>Criação de funções e passagem de argumentos ​​para essas funções </li>
+                                <li>Utilização de operações de concatenação de cadeias de caracteres</li>
+                                <li>Utilização de lógica condicional e de operadores de comparação com if/else if/else</li>
+                                <li>Criação de arrays e adição e leitura de valores em arrays</li>
+                                <li>Utilização de operações matemáticas e geração de números (pseudo)aleatórios</li>
+
+
+                                <p>Este emblema só pode ser atribuído se o candidato já tiver recebido o Emblema de JavaScript Iniciado.</p>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de JavaScript de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «JavaScript (Intermédio)» do CoderDojo. [http://kata.coderdojo.com/wiki/Intermediate_Javascript_Sushi]</li>
+                                <li>Demonstrando de qualquer outra forma ter aprendido técnicas de JavaScript incluindo o registro de mensagens, a escuta de acções e a utilização de variáveis, instruções condicionais, arrays e funções.</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/77" width="142">
+                            </td>
+
+                            <td>
+                                <a id="javascript-advanced"></a><h3>Javascript [Avançado]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de JavaScript exemplificando princípios da linguagem (potencialmente com o auxílio de código de biblioteca, e.g., do jQuery) incluindo:</p>
+                                <li>Separação do código em funções para reutilização e fácil gestão</li>
+                                <li>Armazenamento de dados como pares de chave-valor em literais de objecto</li>
+                                <li>Utilização de variáveis ​​booleanas e negação dos seus valores usando «!»</li>
+                                <li>Remoção e filtragem de valores de arrays</li>
+                                <li>Modificação de classes CSS em objectos DOM a partir do JavaScript</li>
+                                <li>Modificação do DOM, adicionando e removendo itens</li>
+                                <li>Obtenção de valores de entrada de formulários HTML</li>
+                                <li>Escuta de acções em todos os objectos DOM com determinadas propriedades (classe/etiqueta/identidade)</li>
+                                <li>Pesquisar em linha de soluções para os problemas com que se deparar</li>
+
+
+                                <p>Este emblema só pode ser atribuído se o candidato já tiver recebido o Emblema de JavaScript Intermédio.</p>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de JavaScript de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «JavaScript (Avançado)» do CoderDojo. [http://kata.coderdojo.com/wiki/Advanced_Javascript_Sushi]</li>
+                                <li>Aprendendo a construir uma aplicação web usando JavaScript avançado, com a opção de usar código de biblioteca</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h1>Scratch</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h1>App Inventor</h1>
+                            </td>
+                        </tr>
+                        <tr> <a id="app-inventor-begginer"></a>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/84" width="142">
+
+                            </td>
+
+                            <td>
+                                <h3>App Inventor [Iniciado]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento do App Inventor criando e executando, num dispositivo Android ou num emulador, uma aplicação que:</p>
+                                <li>Inclui mais de uma tela e permite que o utilizador se mova entre elas</li>
+                                <li>Usa botões ou algum outro controlo para desencadear um comportamento no ecrã, e.g., mostrar uma mensagem ou uma imagem</li>
+                                <li>Usa disposições (layouts) para colocar elementos em colunas e/ou linhas e para os alinhar</li>
+                                <li>Mostra um componente de média, e.g., um vídeo ou uma imagem</li>
+                                <li>Usa pelo menos uma variável nos blocos da aplicação</li>
+                                <li>Usa blocos para receber texto de entrada do utilizador e para o mostrar</li>
+                                <li>Executa uma acção condicional com base numa entrada do utilizador</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/85" width="142">
+                            </td>
+
+                            <td>
+                                <h3>App Inventor [Intermédio]</h3>
+
+                                <p>O detentor deste emblema levou a sua criatividade e conhecimento do App Inventor a um nível mais elevado criando e executando, num dispositivo Android ou num emulador, uma aplicação que:</p>
+                                <li>Utiliza o gravador de som ou a funcionalidade da câmara do telefone</li>
+                                <li>Guarda informações submetidas pelo utilizador num arquivo no telefone</li>
+                                <li>Carrega essa informação do arquivo e mostra-a</li>
+                                <li>Usa pelo menos um procedimento nos blocos da aplicação</li>
+                                <li>Usa pelo menos um ciclo nos blocos da aplicação</li>
+                                <li>Usa pelo menos uma lista nos blocos da aplicação</li>
+                                <li>Usa blocos para receber texto de entrada do utilizador e para o mostrar</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/64" width="142">
+                            </td>
+
+                            <td>
+                                <h3>HTML e CSS [Iniciado]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de HTML e CSS aprendendo os seguintes princípios fundamentais:</p>
+                                <li>Utilização de um editor de texto para criar e guardar um arquivo HTML.</li>
+                                <li>Construção de um sítio web com um título, texto de parágrafo, uma lista e uma imagem.</li>
+                                <li>Utilização de um navegador web para abrir esse arquivo e mostrar o seu sítio web.</li>
+                                <li>Ligação de páginas entre si e também ligação a um sítio web externo.</li>
+                                <li>Criação de uma tabela incluindo cabeçalhos e várias linhas.</li>
+                                <li>Criação de um ficheiro CSS e estilização do sítio web criando uma barra de menu simples e mudar cores, fundos e bordas.</li>
+
+
+                                <p>Para receber este emblema, o candidato tem de demonstrar a sua criatividade e conhecimento de HTML e CSS de uma das seguintes formas:</p>
+                                <li>Completando os cartões Sushi oficiais «HTML e CSS (Iniciado)» do CoderDojo. [http://kata.coderdojo.com/wiki/My_First_Website]</li>
+                                <li>Criando um sítio web simples usando HTML e estilizando esse sítio web usando CSS, demonstrando o seu conhecimento dos princípios fundamentais acima.</li>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/74" width="142">
+
+                            </td>
+
+                            <td>
+                                <h3>HTML e CSS [Intermédio]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de HTML e CSS exemplificando princípios dessas linguagens incluindo:</p>
+                                <li>Compreensão básica de como e porquê usar as Ferramentas do Programador do navegador web, em particular o Inspector.</li>
+                                <li>Utilização de classes e identificadores para atribuir propriedades CSS a elementos HTML, compreendendo a diferença entre os dois.</li>
+                                <li>Utilização de medidas relativas (e.g.,%, vh ou em) e absolutas (px), compreendendo a diferença.</li>
+                                <li>Utilização da pseudoclasse pairar (hover) recorrendo a um selector em CSS para produzir uma alteração visível num elemento.</li>
+                                <li>Animação de elementos HTML usando animações CSS e quadros-chave.</li>
+
+
+                                <p>Este emblema só pode ser atribuído se o candidato já tiver recebido o Emblema de HTML e CSS Iniciado.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/75" width="142">
+                            </td>
+
+                            <td>
+                                <h3>HTML e CSS [Avançado]</h3>
+
+                                <p>O detentor deste emblema demonstrou a sua criatividade e conhecimento de HTML e CSS:</p>
+                                <li>Usando um modelo simples para sua página web (a partir de cópia e cola).</li>
+                                <li>Construindo um menu animado a partir de um elemento ul com Transições CSS.</li>
+                                <li>Compreendendo e utilizando a técnica de pai relativamente posicionado com filho(s) absolutamente posicionado(s).</li>
+                                <li>Compreendendo as propriedades de índice-z e de visibilidade.</li>
+                                <li>Utilizando pseudoclasses diferentes de pairar (hover), e.g., clique, alvo, etc.</li>
+                                <li>Pesquisando em linha soluções para os problemas com que se deparar..</li>
+
+
+                                <p>Este emblema só pode ser atribuído se o candidato já tiver recebido o Emblema de HTML e CSS Intermédio.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/50" width="142">
+
+                            </td>
+
+                            <td>
+
+                                <h3>Emblema de Mentor</h3>
+
+
+                                <p>O detentor deste emblema decidiu partilhar com outros o seu conhecimento de programação através de Mentoria no seu CoderDojo. Isso não é tarefa fácil, mas superou o desafio! Partilhando os seus conhecimentos de programação,
+                                    mostrou aos outros que a programação é uma força para mudar o mundo!</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/6" width="142">
+
+                            </td>
+
+                            <td>
+
+                                <h3>Emblema de Campeão</h3>
+
+
+                                <p>O detentor deste emblema decidiu criar um CoderDojo na sua comunidade. Gere e administra um Dojo que ensina gratuitamente crianças e jovens a aprender a programar, mostrando-lhes que programar é uma força para mudar o mundo!</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/60" width="142">
+
+                            </td>
+
+                            <td>
+
+                                <p>O detentor deste emblema demonstrou o seu empenho em melhorar as suas competências como mentor realizando o Módulo E-Aprendizagem «Inspiring Ninjas» do CoderDojo. Este módulo permite compreender como ser um Mentor CoderDojo.
+                                    Nele, os voluntários aprendem acerca de estilos de mentoria e acerca de como os usar na prática. Aprendem também como planear e preparar uma sessão CoderDojo.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/61" width="142">
+                            </td>
+
+                            <td>
+
+                                <p>O detentor deste emblema demonstrou o seu empenho em melhorar as suas competências como mentor realizando o Módulo E-Aprendizagem «'CoderDojo Ethos; Implementation and Practice'» do CoderDojo. Este módulo permite compreender
+                                    o Ethos do CoderDojo. Nele, os mentores aprendem como implementar e pôr em prática, num Dojo, o Ethos do CoderDojo.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/12" width="142">
+
+                            </td>
+
+                            <td>
+
+                                <p>O detentor deste emblema demonstrou o seu interesse em aprender ou em partilhar conhecimentos de programação participando na sua primeira sessão no seu Dojo local! Para se candidatar: Emblemas de participação podem ser
+                                    ganhos por qualquer membro da comunidade CoderDojo (Ninjas, Mentores ou Campeões) através da sua participação no seu Dojo local.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/51" width="142">
+                            </td>
+
+                            <td>
+
+                                <p>O detentor deste emblema demonstrou o seu interesse em aprender ou em partilhar conhecimentos de programação participando nas suas cinco primeiras sessões no seu Dojo local! Para se candidatar: Emblemas de participação
+                                    podem ser ganhos por qualquer membro da comunidade CoderDojo (Ninjas, Mentores ou Campeões) através da sua participação no seu Dojo local.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/49" width="142">
+
+                            </td>
+
+                            <td>
+
+                                <p>O detentor deste emblema demonstrou o seu interesse em aprender ou em partilhar conhecimentos de programação participando nas suas dez primeiras sessões no seu Dojo local! Para se candidatar: Emblemas de participação podem
+                                    ser ganhos por qualquer membro da comunidade CoderDojo (Ninjas, Mentores ou Campeões) através da sua participação no seu Dojo local.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <img border="0" height="200" src="http://badgekit.coderdojo.com/images/badge/52" width="142">
+
+                            </td>
+
+                            <td>
+
+                                <p>O detentor deste emblema demonstrou o seu interesse em aprender ou em partilhar conhecimentos de programação participando nas suas vinte e cinco primeiras sessões no seu Dojo local! Para se candidatar: Emblemas de participação
+                                    podem ser ganhos por qualquer membro da comunidade CoderDojo (Ninjas, Mentores ou Campeões) através da sua participação no seu Dojo local.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
